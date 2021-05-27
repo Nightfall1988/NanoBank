@@ -62,11 +62,6 @@ class AccountService
         return $account;
     }
 
-    public function sendMoney($amount, $currency)
-    {
-        
-    }
-
     public function findShares($id)
     {
         $shareCollection = Share::where('account_id', $id)->get();
