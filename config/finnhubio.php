@@ -11,6 +11,6 @@ return [
     |
     */
 
-    'token' => env('FINNHUB_API_KEY', 'c2lqataad3ice2ne4sh0'),
+    'token' => env('EXC_API_KEY', '5541b870f10699a8c68108da'),
 
 ];

@@ -6,15 +6,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-        "davidgrzyb/laravel-finnhubio": "^1.0",
         "fideloper/proxy": "^4.4",
-        "finnhub/client": "1.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.3|^6.2",
         "laravel/fortify": "^1.7",
         "laravel/framework": "^8.40",
-        "laravel/tinker": "^2.5",
-        "tschope/finnhubio": "^0.4.1"
+        "laravel/tinker": "^2.5"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

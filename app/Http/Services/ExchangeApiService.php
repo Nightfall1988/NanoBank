@@ -3,14 +3,14 @@ namespace App\Http\Services;
 
 use App\Models\Share;
 
-class FinnhubApiService
+class ExchangeApiService
 {
     public function getStock($symbol)
     {
         $httpClient = new \GuzzleHttp\Client();
         $request =
             $httpClient
-                ->get("https://finnhub.io/api/v1/quote?symbol={$symbol}&token=c2lqataad3ice2ne4sh0");
+                ->get("https://v6.exchangerate-api.com/v6/" . env('EXC_API_KEY') . "/latest/{$symbol}");
 
         $response = json_decode($request->getBody()->getContents());        
         return $response;
